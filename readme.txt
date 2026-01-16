@@ -1,52 +1,57 @@
-ANN CHURN PREDICTION PROJECT
-===========================
+PROJECT TITLE
+-------------
+Customer Churn Prediction using Recurrent Neural Network (RNN)
 
-Project Description
+
+PROJECT DESCRIPTION
 -------------------
-This project focuses on predicting customer churn using an Artificial Neural Network (ANN).
-Customer churn refers to whether a customer will stay with the company or leave the company.
-The model is trained on a churn dataset and learns patterns from customer attributes to
-make accurate predictions.
+This project aims to predict whether a customer will stay with or leave a company using a Recurrent Neural Network (RNN).  
+The model is trained on a customer churn dataset and deployed using Streamlit to provide an interactive web application for real-time predictions.
 
-The complete project is divided into three major parts:
+RNNs are used to capture sequential patterns and dependencies in the data, helping improve churn prediction accuracy.
+
+
+PROJECT STRUCTURE
+-----------------
+The project consists of three major components:
+
 1. Model Training
 2. Model Prediction
 3. Model Deployment using Streamlit
 
 
-1. Model Training
+1. MODEL TRAINING
 -----------------
-- The churn dataset is loaded and preprocessed.
-- Data preprocessing includes:
-  * Handling missing values
-  * Encoding categorical variables
-  * Feature scaling
-- An Artificial Neural Network (ANN) is built using deep learning techniques.
+- The customer churn dataset is preprocessed by:
+  - Handling missing values
+  - Encoding categorical features
+  - Scaling numerical values
+- A Recurrent Neural Network (RNN) architecture is designed.
 - The model is trained on historical customer data.
-- The trained model learns relationships between customer features and churn behavior.
-- After training, the model is saved for later use in prediction.
+- Learned temporal and sequential patterns related to customer behavior.
+- The trained model is saved for future predictions.
 
 
-2. Model Prediction
+2. MODEL PREDICTION
 -------------------
-- The saved ANN model is loaded.
+- The saved RNN model is loaded.
 - New customer input data is provided to the model.
-- The model predicts whether the customer:
-  * Will stay with the company
-  * Will leave (churn)
-- The prediction is displayed in a user-friendly format.
+- The model predicts whether the customer will:
+  - Stay with the company, or
+  - Leave the company (Churn).
+- Prediction results are clearly displayed.
 
 
-3. Model Deployment (Streamlit)
--------------------------------
-- Streamlit is used to build a web-based user interface.
-- Users can enter customer details through input fields.
-- The ANN model processes the input data in real time.
-- The churn prediction result is shown instantly.
-- This makes the model easy to use for non-technical users.
+3. MODEL DEPLOYMENT USING STREAMLIT
+----------------------------------
+- Streamlit is used to build a web-based interface.
+- Users can enter customer details through interactive input fields.
+- The deployed RNN model processes the input data.
+- The application instantly displays churn prediction results.
+- Enables easy access without technical expertise.
 
 
-Tech Stack
+TECH STACK
 ----------
 Programming Language:
 - Python
@@ -57,21 +62,18 @@ Libraries & Frameworks:
 - Scikit-learn
 - TensorFlow / Keras
 - Streamlit
-- Matplotlib / Seaborn (for data visualization)
+- Matplotlib / Seaborn (for visualization, if used)
 
 Tools:
-- Jupyter Notebook / VS Code
-- Streamlit Web App
+- Jupyter Notebook
+- VS Code
 
 
-Use Cases
----------
-- Identifying customers likely to churn
-- Helping businesses take preventive actions
-- Improving customer retention strategies
+DATASET
+-------
+- Customer Churn Dataset
+- Contains customer demographic data, service usage details, and account information.
 
-
-Author Details
 --------------
 Author Name: Sneha Roy
 Gmail: sneharoy2004s@gmail.com
@@ -79,4 +81,5 @@ linkdin: https://www.linkedin.com/in/sneha-roy-00093b371
 Project Title: ANN-Based Customer Churn Prediction  
 Domain: Machine Learning / Deep Learning  
 Deployment Tool: Streamlit  
+
 
